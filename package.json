@@ -1,0 +1,48 @@
+{
+    "name": "extended-array",
+    "version": "1.0.0",
+    "description": "Extended javascript array",
+    "author": "o-su",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/o-su/extended-array.git"
+    },
+    "bugs": {
+        "url": "https://github.com/o-su/extended-array/issues"
+    },
+    "homepage": "https://github.com/o-su/extended-array",
+    "keywords": [
+        "array",
+        "remove",
+        "delete",
+        "empty",
+        "clear",
+        "clone",
+        "sum",
+        "min",
+        "max"
+    ],
+    "files": [
+        "lib"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "clean": "rm -rf node_modules/",
+        "build": "tsc",
+        "test": "jest --config jestconfig.json"
+    },
+    "devDependencies": {
+        "typescript": "*",
+        "jest": "*",
+        "@types/jest": "*",
+        "ts-jest": "*",
+        "prettier": "*"
+    },
+    "prettier": {
+        "useTabs": false,
+        "tabWidth": 4,
+        "singleQuote": false
+    }
+}
