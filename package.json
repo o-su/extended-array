@@ -34,11 +34,11 @@
         "test": "jest --config jestconfig.json"
     },
     "devDependencies": {
-        "typescript": "*",
-        "jest": "*",
         "@types/jest": "*",
+        "jest": "*",
+        "prettier": "*",
         "ts-jest": "*",
-        "prettier": "*"
+        "typescript": "*"
     },
     "prettier": {
         "useTabs": false,
