@@ -14,11 +14,15 @@ Extends native array with additional methods:
 -   min
 -   max
 
-## How to use:
+## Installation
 
+```bash
+npm install --save extended-array
 ```
-$ npm install --save extended-array
 
+## Example Usage
+
+```typescript
 import "extended-array";
 
 const myArray: string[] = [];
