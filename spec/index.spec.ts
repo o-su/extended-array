@@ -210,3 +210,55 @@ describe("when max method is called", () => {
         expect(result).toEqual(5);
     });
 });
+
+describe("when first method is called", () => {
+    test("then returns first element", () => {
+        // given
+        const testArray: number[] = [1, 2, 3, 4, 5];
+
+        // when
+        const result: number | undefined = testArray.first();
+
+        // then
+        expect(result).toEqual(1);
+    });
+});
+
+describe("when first method is called on empty array", () => {
+    test("then returns first element", () => {
+        // given
+        const testArray: number[] = [];
+
+        // when
+        const result: number | undefined = testArray.first();
+
+        // then
+        expect(result).not.toBeDefined();
+    });
+});
+
+describe("when last method is called", () => {
+    test("then returns last element", () => {
+        // given
+        const testArray: number[] = [1, 2, 3, 4, 5];
+
+        // when
+        const result: number | undefined = testArray.last();
+
+        // then
+        expect(result).toEqual(5);
+    });
+});
+
+describe("when last method is called on empty array", () => {
+    test("then returns last element", () => {
+        // given
+        const testArray: number[] = [];
+
+        // when
+        const result: number | undefined = testArray.last();
+
+        // then
+        expect(result).not.toBeDefined();
+    });
+});

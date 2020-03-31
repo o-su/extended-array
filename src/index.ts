@@ -10,6 +10,8 @@ interface Array<T> {
     sum(): number;
     min(): number;
     max(): number;
+    first(): T | undefined;
+    last(): T | undefined;
 }
 
 if (!Array.prototype.get) {
@@ -88,5 +90,23 @@ if (!Array.prototype.min) {
 if (!Array.prototype.max) {
     Array.prototype.max = function (this: number[]): number {
         return Math.max.apply(null, this);
+    };
+}
+
+if (!Array.prototype.first) {
+    Array.prototype.first = function <T>(this: T[]): T | undefined {
+        return this.get(0);
+    };
+}
+
+if (!Array.prototype.last) {
+    Array.prototype.last = function <T>(this: T[]): T | undefined {
+        const length: number = this.length;
+
+        if (length > 0) {
+            return this.get(this.length - 1);
+        } else {
+            return undefined;
+        }
     };
 }
