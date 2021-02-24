@@ -33,7 +33,8 @@
     "scripts": {
         "clean": "rm -rf node_modules/",
         "build": "tsc",
-        "test": "jest --config jestconfig.json"
+        "test": "jest --config jestconfig.json",
+        "prepack": "npm install && npm run build && npm run test"
     },
     "devDependencies": {
         "@types/jest": "*",
