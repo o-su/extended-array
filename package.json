@@ -39,8 +39,8 @@
     "devDependencies": {
         "@types/jest": "*",
         "jest": "*",
-        "prettier": "*",
         "ts-jest": "*",
+        "prettier": "*",
         "typescript": "*"
     },
     "prettier": {
